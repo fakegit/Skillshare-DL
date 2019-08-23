@@ -22,6 +22,8 @@ def info():
 					|  \ | _> |   || | | ||   |\   /
 					|_\_\|___>|_\_||__/_/ |_|_| |_| 
 
+				Visit Us for more Cool Stuff: https://blackpearl.biz/
+
                 """)
 
 
