@@ -1,4 +1,4 @@
-import sys
+import sys, os
 from skillshare import Skillshare
 
 # or by class ID:
