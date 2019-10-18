@@ -5,7 +5,7 @@ from skillshare import Skillshare
 # dl.download_course_by_class_id(189505397)
 
 def main():
-    dl = Skillshare(download_path=os.environ.get('FILE_PATH', './Skillshare'))
+    dl = Skillshare(cookie=cookie)
     course_url = sys.argv[1]
     dl.download_course_by_url(course_url)
 
