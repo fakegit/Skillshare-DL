@@ -78,8 +78,8 @@ class Skillshare(object):
          'Origin':'https://www.skillshare.com'})
         assert not meta_res.status_code != 200, 'Failed to fetch video meta'
         for x in meta_res.json()['sources']:
-            if x['container'] == 'MP4':
-                if 'src' in x:
+            if 'container' in x:
+                if x['container'] == 'MP4' and 'src' in x:
                     dl_url = x['src']
                     break
 
