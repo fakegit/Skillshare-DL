@@ -1,5 +1,5 @@
 import sys, os
-from skillshare import Skillshare
+from skillshare import Skillshare, splash
 from magic import cookie
 
 # or by class ID:
@@ -11,23 +11,6 @@ def main():
     dl.download_course_by_url(course_url)
 
 
-def info():
-    print(r"""	 
-				 ____  _    _ _ _     _                          ____  _     
-				/ ___|| | _(_) | |___| |__   __ _ _ __ ___      |  _ \| |    
-				\___ \| |/ / | | / __| '_ \ / _` | '__/ _ \_____| | | | |    
-				 ___) |   <| | | \__ \ | | | (_| | | |  __/_____| |_| | |___ 
-				|____/|_|\_\_|_|_|___/_| |_|\__,_|_|  \___|     |____/|_____|  
-					 _ __ ___  _ _  _ _ _  ___  _ _ 
-					| / /| __>| \ || | | || . || | |
-					|  \ | _> |   || | | ||   |\   /
-					|_\_\|___>|_\_||__/_/ |_|_| |_| 
-
-				Visit Us for more Cool Stuff: https://blackpearl.biz/
-
-                """)
-
-
 if __name__ == "__main__":
-    info()
+    splash()
     main()
